@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './containers/App';
+import App from './containersApp/App';
 import registerServiceWorker from './registerServiceWorker';
 import { titleNode } from './nodes/titleNode';
 import { BrowserRouter } from 'react-router-dom';
