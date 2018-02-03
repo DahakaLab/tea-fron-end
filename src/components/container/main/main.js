@@ -4,8 +4,8 @@ export default class Main extends Component{
     render(){
         return(
             <div className="main ">
-                <h1>Ремонт ноутбуков</h1>
-                <h2>Чайный сервис</h2>
+                <h1 className="red ">Ремонт ноутбуков</h1>
+                <h2 className="green ">Чайный сервис</h2>
                 <article>
                     <h3>Ремонт ноутбуков любой сложности!</h3>
                     <h3>5 причин почему стоит обращаться напрямую к опытным инженерам, а не в сервисный центр:</h3>
