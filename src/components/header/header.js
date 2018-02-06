@@ -4,9 +4,12 @@ import NavLink from "./navLink/navLink";
 export default class Header extends Component{
     render(){
         return(
-            <div className="header ">
-                <NavLink/>
-            </div>
+            <header className="main_header grid ">
+                <div className="header_content grid">
+                    <h1>Ремонт ноутбуков напрямую</h1>
+                    <NavLink/>
+                </div>
+            </header>
         )
     }
 }

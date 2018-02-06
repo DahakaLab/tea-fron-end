@@ -1,11 +1,45 @@
-$yellow: #0214fc;
+@import "vars.scss";
 
 .green {
-  color: $yellow;
+  color: $accent;
 }
 
 .red {
-  color: $yellow;
+  color: $dark;
+}
+
+.grid {
+  display: grid;
+}
+
+.main_header {
+  min-height: 100vh;
+  background-image: url("https://pp.userapi.com/c841534/v841534079/657ad/uQttm6-8d5E.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  align-content: center;
+  :before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: $dark;
+    opacity: 0.08;
+    text-align: center;
+  }
+}
+
+.header_content {
+  z-index: 1;
+  color: $white;
+  text-align: center;
+}
+
+.container {
+  color: $accent;
 }
 
 body {
