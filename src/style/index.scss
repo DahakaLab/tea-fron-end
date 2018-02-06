@@ -1,12 +1,6 @@
+@import "base.scss";
 @import "vars.scss";
-
-.green {
-  color: $accent;
-}
-
-.red {
-  color: $dark;
-}
+@import "fonts.scss";
 
 .grid {
   display: grid;
@@ -19,31 +13,30 @@
   background-position: center;
   position: relative;
   align-content: center;
-  :before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    background-color: $dark;
-    opacity: 0.08;
-    text-align: center;
-  }
+}
+
+.main_header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: $dark;
+  opacity: .80;
+  text-align: center;
 }
 
 .header_content {
   z-index: 1;
   color: $white;
   text-align: center;
-}
-
-.container {
-  color: $accent;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+  padding: 60px $gutter;
+  h1 {
+    font-size: 60px;
+    font-family: Play, sans-serif;
+    font-weight: bold;
+    margin: 20px 0;
+    line-height: 1.5;
+  }
 }

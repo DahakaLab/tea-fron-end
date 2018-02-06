@@ -12,11 +12,11 @@ export default class About extends Component{
             <div className="about ">
                 <aside className="aside ">
                     <nav className="nav_link_aside ">
-                        <li className="nav_link_aside"><Link className="article" to="/about">Мой опыт работы</Link></li>
-                        <li className="nav_link_aside"><Link className="article" to="/about/politics">Моя политика работы</Link></li>
-                        <li className="nav_link_aside"><Link className="article" to="/about/principle">Мой принцип работы</Link></li>
-                        <li className="nav_link_aside"><Link className="article" to="/about/equipment">Мое оборудование</Link></li>
-                        <li className="nav_link_aside"><Link className="article" to="/about/contacts">Контакты</Link></li>
+                        <Link className="article" to="/about">Мой опыт работы</Link>
+                        <Link className="article" to="/about/politics">Моя политика работы</Link>
+                        <Link className="article" to="/about/principle">Мой принцип работы</Link>
+                        <Link className="article" to="/about/equipment">Мое оборудование</Link>
+                        <Link className="article" to="/about/contacts">Контакты</Link>
                     </nav>
                 </aside>
                 <div className="articles_about ">
