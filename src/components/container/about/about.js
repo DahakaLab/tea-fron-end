@@ -10,15 +10,35 @@ export default class About extends Component{
     render(){
         return(
             <div className="about ">
-                <aside className="aside ">
-                    <nav className="nav_link_aside ">
-                        <Link className="article" to="/about">Мой опыт работы</Link>
-                        <Link className="article" to="/about/politics">Моя политика работы</Link>
-                        <Link className="article" to="/about/principle">Мой принцип работы</Link>
-                        <Link className="article" to="/about/equipment">Мое оборудование</Link>
-                        <Link className="article" to="/about/contacts">Контакты</Link>
-                    </nav>
-                </aside>
+                <section className="portfolio_section grid">
+                    <Link className="portfolio_item grid" style={{backgroundImage: `url(https://pp.userapi.com/c841534/v841534079/65785/0b5wcHN5lsk.jpg)`}} to="/about">
+                        <span>Мой опыт работы</span>
+                    </Link>
+                    <Link className="portfolio_item grid" style={{backgroundImage: `url(https://pp.userapi.com/c841534/v841534079/657b7/r5AUiYTfOe4.jpg)`}} to="/about/politics">
+                        <span>Моя политика работы</span>
+                    </Link>
+                    <Link className="portfolio_item grid" style={{backgroundImage: `url(https://pp.userapi.com/c841534/v841534079/65799/TfGFPLnQZuA.jpg)`}} to="/about/principle">
+                        <span>Мой принцип работы</span>
+                    </Link>
+                    <Link className="portfolio_item grid" style={{backgroundImage: `url(https://pp.userapi.com/c841534/v841534079/6578f/wDoQIyVJakw.jpg)`}} to="/about/equipment">
+                        <span>Мое оборудование</span>
+                    </Link>
+                    <Link className="portfolio_item grid" style={{backgroundImage: `url(https://pp.userapi.com/c841534/v841534079/657a3/nfYwNIFGu5c.jpg)`}} to="/about/contacts">
+                        <span>Контакты</span>
+                    </Link>
+                    <div className="portfolio_item grid" style={{backgroundImage: `url(https://pp.userapi.com/c841534/v841534079/6577b/SztrIB5gUq8.jpg)`}}>
+                        <span>div 6</span>
+                    </div>
+                    <div className="portfolio_item grid" style={{backgroundImage: `url(https://pp.userapi.com/c841534/v841534079/65771/0DnshkM7bKA.jpg)`}}>
+                        <span>div 7</span>
+                    </div>
+                    <div className="portfolio_item grid" style={{backgroundImage: `url(https://pp.userapi.com/c841534/v841534079/65767/T4k02okfjGE.jpg)`}}>
+                        <span>div 8</span>
+                    </div>
+                    <div className="portfolio_item grid" style={{backgroundImage: `url(https://pp.userapi.com/c841534/v841534079/6575d/CWUeZZRag_0.jpg)`}}>
+                        <span>div 9</span>
+                    </div>
+                </section>
                 <div className="articles_about ">
                     <Switch>
                         <Route exact path="/about" component={Experince}/>

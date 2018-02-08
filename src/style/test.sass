@@ -1,0 +1,26 @@
+.portfolio_item
+  min-height: 32vh
+  background-size: cover
+  background-position: center
+  text-align: center
+  align-content: center
+  padding: 10px
+  font-size: 20px
+  font-weight: bold
+  color: #4b5a65
+  position: relative
+  transition: color .5s ease
+  cursor: pointer
+  &::before
+    content: ""
+    position: absolute
+    top: 0
+    right: 0
+    left: 0
+    bottom: 0
+    background-color: #000000
+    opacity: .60
+    text-align: center
+  >*
+    z-index: 1
+

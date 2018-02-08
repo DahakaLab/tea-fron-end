@@ -8,7 +8,8 @@ import NotFound from './notFound/notFound';
 export default class Container extends Component {
     render() {
         return(
-            <div className="container ">
+            <div className="container">
+
                 <Switch>
                     <Route exact path="/" component={Main}/>
                     <Route path="/price" component={Price}/>
@@ -16,6 +17,7 @@ export default class Container extends Component {
                     <Route path="*" component={NotFound}/>
                 </Switch>
             </div>
+
         )
     }
 }
