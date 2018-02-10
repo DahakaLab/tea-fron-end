@@ -15,3 +15,8 @@ export const IMAGE_ABOUT_RIGHT_2 = `url(https://pp.userapi.com/c830709/v83070999
 export const IMAGE_ABOUT_RIGHT_3 = `url(https://pp.userapi.com/c830709/v830709990/697a1/xCK4EuRpwYQ.jpg)`;
 export const IMAGE_ABOUT_RIGHT_4 = `url(https://pp.userapi.com/c830709/v830709990/697ab/YSjRUlUUPco.jpg)`;
 export const IMAGE_ABOUT_RIGHT_5 = `url(https://pp.userapi.com/c830709/v830709990/697eb/Ssf2kgxcr7Y.jpg)`;
+
+export const IMAGE_MAIN_DELIVERY = `url(https://pp.userapi.com/c830709/v830709311/6c66f/DWy9HT7CYgo.jpg)`;
+export const IMAGE_MAIN_DIAGNOSTIC = `url(https://pp.userapi.com/c830709/v830709311/6c679/KYd3D7a-SHg.jpg)`;
+export const IMAGE_MAIN_REPAIR = `url(https://pp.userapi.com/c830709/v830709311/6c683/u3XSWMS6zTI.jpg)`;
+export const IMAGE_MAIN_5REASON = `url(https://pp.userapi.com/c830709/v830709311/6c68d/6A1Hku7PojI.jpg)`;
