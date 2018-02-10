@@ -6,36 +6,48 @@ import Experince from "./experience/experience";
 import Politics from "./politics/politics";
 import Principle from "./principle/principle";
 
+import {
+    IMAGE_GRID_1,
+    IMAGE_GRID_2,
+    IMAGE_GRID_3,
+    IMAGE_GRID_4,
+    IMAGE_GRID_5,
+    IMAGE_GRID_6,
+    IMAGE_GRID_7,
+    IMAGE_GRID_8,
+    IMAGE_GRID_9
+} from "./../../../style/image.js";
+
 export default class About extends Component{
     render(){
         return(
             <div className="about ">
                 <section className="portfolio_section grid">
-                    <Link className="portfolio_item grid" style={{backgroundImage: `url(https://pp.userapi.com/c841534/v841534079/65785/0b5wcHN5lsk.jpg)`}} to="/about">
+                    <Link className="portfolio_item grid" style={{backgroundImage: IMAGE_GRID_1}} to="/about">
                         <span>Мой опыт работы</span>
                     </Link>
-                    <Link className="portfolio_item grid" style={{backgroundImage: `url(https://pp.userapi.com/c841534/v841534079/657b7/r5AUiYTfOe4.jpg)`}} to="/about/politics">
+                    <Link className="portfolio_item grid" style={{backgroundImage: IMAGE_GRID_2}} to="/about/politics">
                         <span>Моя политика работы</span>
                     </Link>
-                    <Link className="portfolio_item grid" style={{backgroundImage: `url(https://pp.userapi.com/c841534/v841534079/65799/TfGFPLnQZuA.jpg)`}} to="/about/principle">
+                    <Link className="portfolio_item grid" style={{backgroundImage: IMAGE_GRID_3}} to="/about/principle">
                         <span>Мой принцип работы</span>
                     </Link>
-                    <Link className="portfolio_item grid" style={{backgroundImage: `url(https://pp.userapi.com/c841534/v841534079/6578f/wDoQIyVJakw.jpg)`}} to="/about/equipment">
+                    <Link className="portfolio_item grid" style={{backgroundImage: IMAGE_GRID_4}} to="/about/equipment">
                         <span>Мое оборудование</span>
                     </Link>
-                    <Link className="portfolio_item grid" style={{backgroundImage: `url(https://pp.userapi.com/c841534/v841534079/657a3/nfYwNIFGu5c.jpg)`}} to="/about/contacts">
+                    <Link className="portfolio_item grid" style={{backgroundImage: IMAGE_GRID_5}} to="/about/contacts">
                         <span>Контакты</span>
                     </Link>
-                    <div className="portfolio_item grid" style={{backgroundImage: `url(https://pp.userapi.com/c841534/v841534079/6577b/SztrIB5gUq8.jpg)`}}>
+                    <div className="portfolio_item grid" style={{backgroundImage: IMAGE_GRID_6}}>
                         <span>div 6</span>
                     </div>
-                    <div className="portfolio_item grid" style={{backgroundImage: `url(https://pp.userapi.com/c841534/v841534079/65771/0DnshkM7bKA.jpg)`}}>
+                    <div className="portfolio_item grid" style={{backgroundImage: IMAGE_GRID_7}}>
                         <span>div 7</span>
                     </div>
-                    <div className="portfolio_item grid" style={{backgroundImage: `url(https://pp.userapi.com/c841534/v841534079/65767/T4k02okfjGE.jpg)`}}>
+                    <div className="portfolio_item grid" style={{backgroundImage: IMAGE_GRID_8}}>
                         <span>div 8</span>
                     </div>
-                    <div className="portfolio_item grid" style={{backgroundImage: `url(https://pp.userapi.com/c841534/v841534079/6575d/CWUeZZRag_0.jpg)`}}>
+                    <div className="portfolio_item grid" style={{backgroundImage: IMAGE_GRID_9}}>
                         <span>div 9</span>
                     </div>
                 </section>
