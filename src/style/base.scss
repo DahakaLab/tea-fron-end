@@ -7,3 +7,10 @@ body {
   overflow-x: hidden;
   opacity: 1;
 }
+
+.img_responsive {
+  display: block;
+  min-width: 100%;
+  height: auto;
+  text-align: center;
+}

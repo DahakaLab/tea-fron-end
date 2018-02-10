@@ -9,3 +9,9 @@ export const IMAGE_GRID_6 = `url(https://pp.userapi.com/c841534/v841534079/6577b
 export const IMAGE_GRID_7 = `url(https://pp.userapi.com/c841534/v841534079/65771/0DnshkM7bKA.jpg)`;
 export const IMAGE_GRID_8 = `url(https://pp.userapi.com/c841534/v841534079/65767/T4k02okfjGE.jpg)`;
 export const IMAGE_GRID_9 = `url(https://pp.userapi.com/c841534/v841534079/6575d/CWUeZZRag_0.jpg)`;
+
+export const IMAGE_ABOUT_RIGHT_1 = `url(https://pp.userapi.com/c830309/v830309409/749f7/hw6_I18AOF0.jpg)`;
+export const IMAGE_ABOUT_RIGHT_2 = `url(https://pp.userapi.com/c830709/v830709990/69797/IWGfP__3f0w.jpg)`;
+export const IMAGE_ABOUT_RIGHT_3 = `url(https://pp.userapi.com/c830709/v830709990/697a1/xCK4EuRpwYQ.jpg)`;
+export const IMAGE_ABOUT_RIGHT_4 = `url(https://pp.userapi.com/c830709/v830709990/697ab/YSjRUlUUPco.jpg)`;
+export const IMAGE_ABOUT_RIGHT_5 = `url(https://pp.userapi.com/c830709/v830709990/697eb/Ssf2kgxcr7Y.jpg)`;
