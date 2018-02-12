@@ -32,9 +32,9 @@ export default class About extends Component{
                 <Switch>
                     <Route exact path="/about" component={Experince}/>
                     <Route path="/about/politics" component={Politics}/>
-                    <Route exact path="/about/principle" component={Principle}/>
-                    <Route exact path="/about/equipment" component={Equipment}/>
-                    <Route exact path="/about/contacts" component={Contacts}/>
+                    <Route path="/about/principle" component={Principle}/>
+                    <Route path="/about/equipment" component={Equipment}/>
+                    <Route path="/about/contacts" component={Contacts}/>
                 </Switch>
 
             </div>

@@ -1,16 +1,16 @@
+import { Link } from 'react-router-dom';
 import React, { Component } from 'react';
-import { Link, Switch, Route } from 'react-router-dom';
 import {
     IMAGE_MAIN_DELIVERY,
     IMAGE_MAIN_DIAGNOSTIC,
     IMAGE_MAIN_REPAIR,
     IMAGE_MAIN_5REASON
-} from "./../../../style/image.js";
+} from "../../../style/image.js";
 
-export default class Main extends Component{
+export default class MainRoute extends Component{
     render(){
         return(
-            <div className="main ">
+            <div className="main_route">
 
                 <section className="section_blog">
                     <div className="container">
@@ -39,7 +39,7 @@ export default class Main extends Component{
                                     <p>Мы клево починим</p>
                                 </span>
                             </Link>
-                            <Link className="blog_item grid" to="/main/why">
+                            <Link className="blog_item grid" to="/main/5reasons">
                                 <span className="blog_item_img" style={{backgroundImage: IMAGE_MAIN_5REASON}}/>
                                 <span className="blog_item_content grid">
                                     <h4>5 причин почему стоит обращаться напрямую к опытным инженерам</h4>
@@ -50,7 +50,7 @@ export default class Main extends Component{
                         </div>
                     </div>
                 </section>
-                
+
             </div>
         )
     }

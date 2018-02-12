@@ -8,8 +8,8 @@ export default class Header extends Component{
             <header className="main_header grid " style={{backgroundImage: IMAGE_HEADER}}>
                 <div className="header_content grid">
                     <h1>Чайный сервис</h1>
-                    <NavLink/>
                     <h2>по ремонту ноутбуков</h2>
+                    <NavLink/>
                 </div>
             </header>
         )
