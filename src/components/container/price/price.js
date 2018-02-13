@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
 import { Link, Switch, Route } from 'react-router-dom';
-import Modal from 'react-modal';
+import ReactModal from 'react-modal';
 import {
     IMAGE_GRID_1,
     IMAGE_GRID_2,
@@ -27,8 +27,24 @@ export default class Price extends Component{
     constructor(props){
         super(props);
         this.state = {
-            modalIsOpen: false
+            modalIsOpenDelivery: false,
+            modalIsOpenNodalReplacement: false,
+            modalIsOpenComponentReplacement: false,
+            modalIsOpenSMDReplacement: false,
+            modalIsOpenBGAReplacement: false,
+            modalIsOpenPowerSupplyRepair: false,
+            modalIsOpenCaseRepair: false,
+            modalIsOpenFirmware: false,
+            modalIsOpenSoftware: false
         };
+    }
+
+    handleOpenModal2 () {
+        this.setState({ modalIsOpenDelivery: true });
+    }
+
+    handleCloseModal () {
+        this.setState({ modalIsOpenDelivery: false });
     }
 
     render(){
@@ -37,106 +53,168 @@ export default class Price extends Component{
 
 
                 <section className="portfolio_section grid">
-                    <Link
+                    <a
                         className="portfolio_item grid"
                         style={{backgroundImage: IMAGE_GRID_5}}
-                        onClick={() => this.setState({modalIsOpen: true})}
-                        to="/price/Delivery">
+                        onClick={() => this.setState({modalIsOpenDelivery: true})}>
 
                         <span>Доставка и диагностика</span>
 
-                    </Link>
-                    <Link
+                    </a>
+                    <a
                         className="portfolio_item  close_btn grid"
                         style={{backgroundImage: IMAGE_GRID_1}}
-                        onClick={() => this.setState({modalIsOpen: true})}
-                        to="/price/NodalReplacement">
+                        onClick={() => this.setState({modalIsOpenNodalReplacement: true})}>
 
                         <span>Узловая замена</span>
 
-                    </Link>
-                    <Link
+                    </a>
+                    <a
                         className="portfolio_item grid"
                         style={{backgroundImage: IMAGE_GRID_2}}
-                        onClick={() => this.setState({modalIsOpen: true})}
-                        to="/price/ComponentReplacement">
+                        onClick={() => this.setState({modalIsOpenComponentReplacement: true})}>
 
                         <span>Компонентная замена</span>
 
-                    </Link>
-                    <Link className="portfolio_item grid"
+                    </a>
+                    <a className="portfolio_item grid"
                           style={{backgroundImage: IMAGE_GRID_3}}
-                          onClick={() => this.setState({modalIsOpen: true})}
-                          to="/price/SMDReplacement">
+                          onClick={() => this.setState({modalIsOpenSMDReplacement: true})}>
 
                         <span>Замена компонентов поверхностного монтажа (SMD)</span>
 
-                    </Link>
-                    <Link
+                    </a>
+                    <a
                         className="portfolio_item grid"
                         style={{backgroundImage: IMAGE_GRID_4}}
-                        onClick={() => this.setState({modalIsOpen: true})}
-                        to="/price/BGAReplacement">
+                        onClick={() => this.setState({modalIsOpenBGAReplacement: true})}>
 
                         <span>Замена компонентов на массиве шариков (BGA)</span>
 
-                    </Link>
-                    <div
+                    </a>
+                    <a
                         className="portfolio_item grid"
                         style={{backgroundImage: IMAGE_GRID_6}}
-                        onClick={() => this.setState({modalIsOpen: true})}
-                        to="/price/PowerSupplyRepair">
+                        onClick={() => this.setState({modalIsOpenPowerSupplyRepair: true})}>
 
                         <span>Ремонт по цепям питания</span>
 
-                    </div>
-                    <div
+                    </a>
+                    <a
                         className="portfolio_item grid"
                         style={{backgroundImage: IMAGE_GRID_7}}
-                        onClick={() => this.setState({modalIsOpen: true})}
-                        to="/price/CaseRapair">
+                        onClick={() => this.setState({modalIsOpenCaseRepair: true})}>
 
                         <span>Корпусной ремонт</span>
 
-                    </div>
-                    <div
+                    </a>
+                    <a
                         className="portfolio_item grid"
                         style={{backgroundImage: IMAGE_GRID_8}}
-                        onClick={() => this.setState({modalIsOpen: true})}
-                        to="/price/Firmware">
+                        onClick={() => this.setState({modalIsOpenFirmware: true})}>
 
                         <span>Прошивка</span>
 
-                    </div>
-                    <div
+                    </a>
+                    <a
                         className="portfolio_item grid"
                         style={{backgroundImage: IMAGE_GRID_9}}
-                        onClick={() => this.setState({modalIsOpen: true})}
-                        to="/price/Software">
+                        onClick={() => this.setState({modalIsOpenSoftware: true})}>
 
                         <span>Работа с программным обеспечением</span>
 
-                    </div>
+                    </a>
                 </section>
 
-                <Modal
-                    isOpen={this.state.modalIsOpen}
-                    aria={{
-                        labelledby: "heading",
-                        describedby: "full_description"
-                    }}>
-                    <Switch>
-                        <Route path="/price/Delivery" component={Delivery}/>
-                        <Route path="/price/NodalReplacement" component={NodalReplacement}/>
-                        <Route path="/price/ComponentReplacement" component={ComponentReplacement}/>
-                        <Route path="/price/SMDReplacement" component={SMDReplacement}/>
-                        <Route path="/price/BGAReplacement" component={BGAReplacement}/>
-                        <Route path="/price/PowerSupplyRepair" component={PowerSupplyRepair}/>
-                        <Route path="/price/CaseRapair" component={CaseRapair}/>
-                        <Route path="/price/Firmware" component={Firmware}/>
-                        <Route path="/price/Software" component={Software}/>
-                    </Switch>
-                </Modal>
+                <div className="modal_block">
+
+                    <ReactModal
+                        isOpen={this.state.modalIsOpenDelivery}
+                        contentLabel="Modal #1 Global Style Override Example"
+                        onRequestClose={this.handleCloseModal}
+                        className="modal_item"
+                    >
+                        <div className="test grid">
+                        <p>Modal text!</p>
+                        <button onClick={this.handleCloseModal}>Close Modal</button>
+                        </div>
+                    </ReactModal>
+
+                    {/*<ReactModal*/}
+                        {/*isOpen={this.state.modalIsOpenDelivery}*/}
+                        {/*aria={{*/}
+                            {/*labelledby: "heading",*/}
+                            {/*describedby: "full_description"*/}
+                        {/*}}>*/}
+                            {/*<Delivery/>*/}
+                        {/*<button className="button" onClick={() => console.log('click')}>lolololl</button>*/}
+                    {/*</ReactModal>*/}
+                    <ReactModal
+                        isOpen={this.state.modalIsOpenNodalReplacement}
+                        aria={{
+                            labelledby: "heading",
+                            describedby: "full_description"
+                        }}>
+                        <NodalReplacement/>
+                    </ReactModal>
+                    <ReactModal
+                        isOpen={this.state.modalIsOpenComponentReplacement}
+                        aria={{
+                            labelledby: "heading",
+                            describedby: "full_description"
+                        }}>
+                        <ComponentReplacement/>
+                    </ReactModal>
+                    <ReactModal
+                        isOpen={this.state.modalIsOpenSMDReplacement}
+                        aria={{
+                            labelledby: "heading",
+                            describedby: "full_description"
+                        }}>
+                        <SMDReplacement/>
+                    </ReactModal>
+                    <ReactModal
+                        isOpen={this.state.modalIsOpenBGAReplacement}
+                        aria={{
+                            labelledby: "heading",
+                            describedby: "full_description"
+                        }}>
+                        <BGAReplacement/>
+                    </ReactModal>
+                    <ReactModal
+                        isOpen={this.state.modalIsOpenPowerSupplyRepair}
+                        aria={{
+                            labelledby: "heading",
+                            describedby: "full_description"
+                        }}>
+                        <PowerSupplyRepair/>
+                    </ReactModal>
+                    <ReactModal
+                        isOpen={this.state.modalIsOpenCaseRapair}
+                        aria={{
+                            labelledby: "heading",
+                            describedby: "full_description"
+                        }}>
+                        <CaseRapair/>
+                    </ReactModal>
+                    <ReactModal
+                        isOpen={this.state.modalIsOpenFirmware}
+                        aria={{
+                            labelledby: "heading",
+                            describedby: "full_description"
+                        }}>
+                        <Firmware/>
+                    </ReactModal>
+                    <ReactModal
+                        isOpen={this.state.modalIsOpenSoftware}
+                        aria={{
+                            labelledby: "heading",
+                            describedby: "full_description"
+                        }}>
+                        <Software/>
+                    </ReactModal>
+
+                </div>
 
             </div>
         )
