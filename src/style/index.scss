@@ -313,9 +313,11 @@
 }
 
 
+.ReactModal__Overlay {
+  z-index: 1000;
+}
+
 
 .modal_item {
-  position: relative;
-  z-index: 2;
   color: $accent;
 }
