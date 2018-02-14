@@ -34,6 +34,16 @@ export default class ModalBlock extends Component{
                     aria={{
                         labelledby: "heading",
                         describedby: "full_description"
+                    }}
+                    className={{
+                        base: 'react_modal',
+                        afterOpen: 'grid',
+                        beforeClose: 'react_modal_before_close'
+                    }}
+                    overlayClassName={{
+                        base: 'react_modal_overlay',
+                        afterOpen: 'react_modal_overlay_after_open',
+                        beforeClose: 'react_modal_overlay_before_close'
                     }}>
 
                     <DeliveryAndDiagnostic/>
@@ -45,6 +55,16 @@ export default class ModalBlock extends Component{
                     aria={{
                         labelledby: "heading",
                         describedby: "full_description"
+                    }}
+                    className={{
+                        base: 'react_modal',
+                        afterOpen: 'grid',
+                        beforeClose: 'react_modal_before_close'
+                    }}
+                    overlayClassName={{
+                        base: 'react_modal_overlay',
+                        afterOpen: 'react_modal_overlay_after_open',
+                        beforeClose: 'react_modal_overlay_before_close'
                     }}>
 
                     <NodalReplacement/>
@@ -56,6 +76,16 @@ export default class ModalBlock extends Component{
                     aria={{
                         labelledby: "heading",
                         describedby: "full_description"
+                    }}
+                    className={{
+                        base: 'react_modal',
+                        afterOpen: 'grid',
+                        beforeClose: 'react_modal_before_close'
+                    }}
+                    overlayClassName={{
+                        base: 'react_modal_overlay',
+                        afterOpen: 'react_modal_overlay_after_open',
+                        beforeClose: 'myClass_before-close'
                     }}>
 
                     <ComponentReplacement/>
@@ -67,6 +97,16 @@ export default class ModalBlock extends Component{
                     aria={{
                         labelledby: "heading",
                         describedby: "full_description"
+                    }}
+                    className={{
+                        base: 'react_modal',
+                        afterOpen: 'grid',
+                        beforeClose: 'react_modal_before_close'
+                    }}
+                    overlayClassName={{
+                        base: 'react_modal_overlay',
+                        afterOpen: 'react_modal_overlay_after_open',
+                        beforeClose: 'myClass_before-close'
                     }}>
 
                     <SMDReplacement/>
@@ -78,6 +118,16 @@ export default class ModalBlock extends Component{
                     aria={{
                         labelledby: "heading",
                         describedby: "full_description"
+                    }}
+                    className={{
+                    base: 'react_modal',
+                    afterOpen: 'grid',
+                    beforeClose: 'react_modal_before_close'
+                    }}
+                    overlayClassName={{
+                        base: 'react_modal_overlay',
+                        afterOpen: 'react_modal_overlay_after_open',
+                        beforeClose: 'myClass_before-close'
                     }}>
 
                     <BGAReplacement/>
@@ -89,6 +139,16 @@ export default class ModalBlock extends Component{
                     aria={{
                         labelledby: "heading",
                         describedby: "full_description"
+                    }}
+                    className={{
+                        base: 'react_modal',
+                        afterOpen: 'grid',
+                        beforeClose: 'react_modal_before_close'
+                    }}
+                    overlayClassName={{
+                        base: 'react_modal_overlay',
+                        afterOpen: 'react_modal_overlay_after_open',
+                        beforeClose: 'myClass_before-close'
                     }}>
 
                     <PowerSupplyRepair/>
@@ -100,6 +160,16 @@ export default class ModalBlock extends Component{
                     aria={{
                         labelledby: "heading",
                         describedby: "full_description"
+                    }}
+                    className={{
+                        base: 'react_modal',
+                        afterOpen: 'grid',
+                        beforeClose: 'react_modal_before_close'
+                    }}
+                    overlayClassName={{
+                        base: 'react_modal_overlay',
+                        afterOpen: 'react_modal_overlay_after_open',
+                        beforeClose: 'myClass_before-close'
                     }}>
 
                     <CaseRapair/>
@@ -111,6 +181,16 @@ export default class ModalBlock extends Component{
                     aria={{
                         labelledby: "heading",
                         describedby: "full_description"
+                    }}
+                    className={{
+                        base: 'react_modal',
+                        afterOpen: 'grid',
+                        beforeClose: 'react_modal_before_close'
+                    }}
+                    overlayClassName={{
+                        base: 'react_modal_overlay',
+                        afterOpen: 'react_modal_overlay_after_open',
+                        beforeClose: 'myClass_before-close'
                     }}>
 
                     <Firmware/>
@@ -122,6 +202,16 @@ export default class ModalBlock extends Component{
                     aria={{
                         labelledby: "heading",
                         describedby: "full_description"
+                    }}
+                    className={{
+                        base: 'react_modal',
+                        afterOpen: 'grid',
+                        beforeClose: 'react_modal_before_close'
+                    }}
+                    overlayClassName={{
+                        base: 'react_modal_overlay',
+                        afterOpen: 'react_modal_overlay_after_open',
+                        beforeClose: 'myClass_before-close'
                     }}>
 
                     <Software/>

@@ -11,7 +11,7 @@ import {
     IMAGE_GRID_8,
     IMAGE_GRID_9
 } from "./../../../style/image.js";
-import ModalBlock from "./components/modal";
+import ModalBlock from "./componentsPrice/modal";
 
 export default class Price extends Component{
     constructor(props){

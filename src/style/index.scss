@@ -313,11 +313,29 @@
 }
 
 
-.ReactModal__Overlay {
-  z-index: 1000;
+
+.react_modal_overlay::before{
+  z-index: 2;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: $dark;
+  opacity: .60;
+  text-align: center;
 }
-
-
-.modal_item {
-  color: $accent;
+.react_modal {
+  position: fixed;
+  z-index: 3;
+  top: 15%;
+  left: 5%;
+  right: 5%;
+  border: $border;
+  background: $light;
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
 }
