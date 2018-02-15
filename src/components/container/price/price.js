@@ -17,37 +17,25 @@ export default class Price extends Component{
     constructor(props){
         super(props);
         this.state = {
-            modalIsOpenDelivery: false,
-            modalIsOpenNodalReplacement: false,
-            modalIsOpenComponentReplacement: false,
-            modalIsOpenSMDReplacement: false,
-            modalIsOpenBGAReplacement: false,
-            modalIsOpenPowerSupplyRepair: false,
-            modalIsOpenCaseRepair: false,
-            modalIsOpenFirmware: false,
-            modalIsOpenSoftware: false
+            modalIsOpen: false,
+            modalItem: ''
         };
 
         this.handleOpenModalDelivery = this.handleOpenModalDelivery.bind(this);
         this.handleCloseModal = this.handleCloseModal.bind(this);
     }
 
-    handleOpenModalDelivery () {
-        this.setState({ modalIsOpenDelivery: true });
+    handleOpenModalDelivery (x) {
+        this.setState({ modalIsOpen: true });
+        this.setState({ modalItem: x });
     }
 
     handleCloseModal () {
         this.setState({
-            modalIsOpenDelivery: false,
-            modalIsOpenNodalReplacement: false,
-            modalIsOpenComponentReplacement: false,
-            modalIsOpenSMDReplacement: false,
-            modalIsOpenBGAReplacement: false,
-            modalIsOpenPowerSupplyRepair: false,
-            modalIsOpenCaseRepair: false,
-            modalIsOpenFirmware: false,
-            modalIsOpenSoftware: false
+            modalIsOpen: false,
+            modalItem: ''
         });
+        console.log('reset props')
     }
 
     componentWillMount() {
@@ -62,7 +50,7 @@ export default class Price extends Component{
                     <a
                         className="portfolio_item grid"
                         style={{backgroundImage: IMAGE_GRID_5}}
-                        onClick={this.handleOpenModalDelivery}>
+                        onClick={() => this.handleOpenModalDelivery('DeliveryAndDiagnostic')}>
 
                         <span>Доставка и диагностика</span>
 
@@ -70,7 +58,7 @@ export default class Price extends Component{
                     <a
                         className="portfolio_item  close_btn grid"
                         style={{backgroundImage: IMAGE_GRID_1}}
-                        onClick={() => this.setState({modalIsOpenNodalReplacement: true})}>
+                        onClick={() => this.handleOpenModalDelivery('NodalReplacement')}>
 
                         <span>Узловая замена</span>
 
@@ -78,14 +66,14 @@ export default class Price extends Component{
                     <a
                         className="portfolio_item grid"
                         style={{backgroundImage: IMAGE_GRID_2}}
-                        onClick={() => this.setState({modalIsOpenComponentReplacement: true})}>
+                        onClick={() => this.handleOpenModalDelivery('ComponentReplacement')}>
 
                         <span>Компонентная замена</span>
 
                     </a>
                     <a className="portfolio_item grid"
-                          style={{backgroundImage: IMAGE_GRID_3}}
-                          onClick={() => this.setState({modalIsOpenSMDReplacement: true})}>
+                       style={{backgroundImage: IMAGE_GRID_3}}
+                       onClick={() => this.handleOpenModalDelivery('SMDReplacement')}>
 
                         <span>Замена компонентов поверхностного монтажа (SMD)</span>
 
@@ -93,7 +81,7 @@ export default class Price extends Component{
                     <a
                         className="portfolio_item grid"
                         style={{backgroundImage: IMAGE_GRID_4}}
-                        onClick={() => this.setState({modalIsOpenBGAReplacement: true})}>
+                        onClick={() => this.handleOpenModalDelivery('BGAReplacement')}>
 
                         <span>Замена компонентов на массиве шариков (BGA)</span>
 
@@ -101,7 +89,7 @@ export default class Price extends Component{
                     <a
                         className="portfolio_item grid"
                         style={{backgroundImage: IMAGE_GRID_6}}
-                        onClick={() => this.setState({modalIsOpenPowerSupplyRepair: true})}>
+                        onClick={() => this.handleOpenModalDelivery('PowerSupplyRepair')}>
 
                         <span>Ремонт по цепям питания</span>
 
@@ -109,7 +97,7 @@ export default class Price extends Component{
                     <a
                         className="portfolio_item grid"
                         style={{backgroundImage: IMAGE_GRID_7}}
-                        onClick={() => this.setState({modalIsOpenCaseRepair: true})}>
+                        onClick={() => this.handleOpenModalDelivery('CaseRepair')}>
 
                         <span>Корпусной ремонт</span>
 
@@ -117,7 +105,7 @@ export default class Price extends Component{
                     <a
                         className="portfolio_item grid"
                         style={{backgroundImage: IMAGE_GRID_8}}
-                        onClick={() => this.setState({modalIsOpenFirmware: true})}>
+                        onClick={() => this.handleOpenModalDelivery('Firmware')}>
 
                         <span>Прошивка</span>
 
@@ -125,7 +113,7 @@ export default class Price extends Component{
                     <a
                         className="portfolio_item grid"
                         style={{backgroundImage: IMAGE_GRID_9}}
-                        onClick={() => this.setState({modalIsOpenSoftware: true})}>
+                        onClick={() => this.handleOpenModalDelivery('Software')}>
 
                         <span>Работа с программным обеспечением</span>
 
