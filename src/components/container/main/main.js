@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import React, { Component } from 'react';
 import {
     IMAGE_MAIN_DELIVERY,
@@ -6,8 +5,36 @@ import {
     IMAGE_MAIN_REPAIR,
     IMAGE_MAIN_5REASON
 } from "../../../style/image.js";
+import FiveReasons from "./5reason/5reasons";
+import Delivery from "./delivery/delivery";
+import Diagnostic from "./diagnostic/diagnostic";
+import Repair from "./repair/repair";
+import ModalMain from "./componentsMain/modalMain";
 
 export default class MainRoute extends Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            modalIsOpen: false,
+            modalItem: null
+        };
+
+        this.handleOpenModal = this.handleOpenModal.bind(this);
+        this.handleCloseModal = this.handleCloseModal.bind(this);
+    }
+
+    handleOpenModal (x) {
+        this.setState({ modalIsOpen: true });
+        this.setState({ modalItem: x });
+    }
+
+    handleCloseModal () {
+        this.setState({
+            modalIsOpen: false,
+            modalItem: null
+        });
+    }
+
     render(){
         return(
             <div className="main_route">
@@ -18,38 +45,52 @@ export default class MainRoute extends Component{
 
                         <div className="blog_main grid">
 
-                            <Link className="blog_item grid" to="/main/delivery">
+                            <a
+                                className="blog_item grid"
+                                onClick={() => this.handleOpenModal(<Delivery/>)}
+                            >
                                 <span className="blog_item_img" style={{backgroundImage: IMAGE_MAIN_DELIVERY}}/>
                                 <span className="blog_item_content grid">
                                     <h4>Бесплатная доставка</h4>
                                     <p>Мы бесплатно доставим</p>
                                 </span>
-                            </Link>
-                            <Link className="blog_item grid" to="/main/diagnostic">
+                            </a>
+                            <a
+                                className="blog_item grid"
+                                onClick={() => this.handleOpenModal(<Diagnostic/>)}
+                            >
                                 <span className="blog_item_img" style={{backgroundImage: IMAGE_MAIN_DIAGNOSTIC}}/>
                                 <span className="blog_item_content grid">
                                     <h4>Бесплатная диагностика</h4>
                                     <p>Мы бесплатно отдиагностируем</p>
                                 </span>
-                            </Link>
-                            <Link className="blog_item grid" to="/main/repair">
+                            </a>
+                            <a
+                                className="blog_item grid"
+                                onClick={() => this.handleOpenModal(<Repair/>)}
+                            >
                                 <span className="blog_item_img" style={{backgroundImage: IMAGE_MAIN_REPAIR}}/>
                                 <span className="blog_item_content grid">
                                     <h4>Качественный ремонт ноутбука любой сложности</h4>
                                     <p>Мы клево починим</p>
                                 </span>
-                            </Link>
-                            <Link className="blog_item grid" to="/main/5reasons">
+                            </a>
+                            <a
+                                className="blog_item grid"
+                                onClick={() => this.handleOpenModal(<FiveReasons/>)}
+                            >
                                 <span className="blog_item_img" style={{backgroundImage: IMAGE_MAIN_5REASON}}/>
                                 <span className="blog_item_content grid">
                                     <h4>5 причин почему стоит обращаться напрямую к опытным инженерам</h4>
                                     <p>Мы все четко объясним</p>
                                 </span>
-                            </Link>
+                            </a>
 
                         </div>
                     </div>
                 </section>
+
+                <ModalMain data={this.state} action={this.handleCloseModal}/>
 
             </div>
         )
