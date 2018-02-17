@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import {
     IMAGE_GRID_1,
     IMAGE_GRID_2,
@@ -8,122 +9,97 @@ import {
     IMAGE_GRID_6,
     IMAGE_GRID_7,
     IMAGE_GRID_8,
-    IMAGE_GRID_9
+    IMAGE_GRID_9,
+    IMAGE_GRID_10
 } from "./../../../style/image.js";
-import ModalBlock from "./componentsPrice/modal";
-import DeliveryAndDiagnostic from "./deliveryAndDiagnostic/deliveryAndDiagnostic";
-import BGAReplacement from "./bgaRaplacement/bgaReplacement";
-import CaseRapair from "./caseRepair/caseRepair";
-import ComponentReplacement from "./componentReplacement/componentReplacement";
-import Firmware from "./firmware/firmware";
-import NodalReplacement from "./nodalReplacement/nodalReplacement";
-import PowerSupplyRepair from "./powerSupplyRepair/powerSypplyRepair";
-import SMDReplacement from "./smdReplacement/smdReplacement";
-import Software from "./software/software";
 
 export default class Price extends Component{
-    constructor(props){
-        super(props);
-        this.state = {
-            modalIsOpen: false,
-            modalItem: null
-        };
-
-        this.handleOpenModal = this.handleOpenModal.bind(this);
-        this.handleCloseModal = this.handleCloseModal.bind(this);
-    }
-
-    handleOpenModal (x) {
-        this.setState({ modalIsOpen: true });
-        this.setState({ modalItem: x });
-    }
-
-    handleCloseModal () {
-        this.setState({
-            modalIsOpen: false,
-            modalItem: null
-        });
-    }
-
     render(){
         return(
             <div className="price">
 
                 <section className="portfolio_section grid">
-                    <a
+                    <Link
+                        className="portfolio_item grid"
+                        style={{backgroundImage: IMAGE_GRID_10}}
+                        to="/price/all_price">
+
+                        <span>Весь прейскурант цен</span>
+
+                    </Link>
+                    <Link
                         className="portfolio_item grid"
                         style={{backgroundImage: IMAGE_GRID_5}}
-                        onClick={() => this.handleOpenModal(<DeliveryAndDiagnostic/>)}>
+                        to="/price/delivery_and_diagnostic">
 
                         <span>Доставка и диагностика</span>
 
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                         className="portfolio_item  close_btn grid"
                         style={{backgroundImage: IMAGE_GRID_1}}
-                        onClick={() => this.handleOpenModal(<NodalReplacement/>)}>
+                        to="/price/nodal_replacement">
 
                         <span>Узловая замена</span>
 
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                         className="portfolio_item grid"
                         style={{backgroundImage: IMAGE_GRID_2}}
-                        onClick={() => this.handleOpenModal(<ComponentReplacement/>)}>
+                        to="/price/component_replacement">
 
                         <span>Компонентная замена</span>
 
-                    </a>
-                    <a className="portfolio_item grid"
-                       style={{backgroundImage: IMAGE_GRID_3}}
-                       onClick={() => this.handleOpenModal(<SMDReplacement/>)}>
+                    </Link>
+                    <Link
+                        className="portfolio_item grid"
+                        style={{backgroundImage: IMAGE_GRID_3}}
+                        to="/price/smd_replacement">
 
                         <span>Замена компонентов поверхностного монтажа (SMD)</span>
 
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                         className="portfolio_item grid"
                         style={{backgroundImage: IMAGE_GRID_4}}
-                        onClick={() => this.handleOpenModal(<BGAReplacement/>)}>
+                        to="/price/bga_replacement">
 
                         <span>Замена компонентов на массиве шариков (BGA)</span>
 
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                         className="portfolio_item grid"
                         style={{backgroundImage: IMAGE_GRID_6}}
-                        onClick={() => this.handleOpenModal(<PowerSupplyRepair/>)}>
+                        to="/price/power_supply_repair">
 
                         <span>Ремонт по цепям питания</span>
 
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                         className="portfolio_item grid"
                         style={{backgroundImage: IMAGE_GRID_7}}
-                        onClick={() => this.handleOpenModal(<CaseRapair/>)}>
+                        to="/price/case_repair">
 
                         <span>Корпусной ремонт</span>
 
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                         className="portfolio_item grid"
                         style={{backgroundImage: IMAGE_GRID_8}}
-                        onClick={() => this.handleOpenModal(<Firmware/>)}>
+                        to="/price/firmware">
 
                         <span>Прошивка</span>
 
-                    </a>
-                    <a
+                    </Link>
+                    <Link
                         className="portfolio_item grid"
                         style={{backgroundImage: IMAGE_GRID_9}}
-                        onClick={() => this.handleOpenModal(<Software/>)}>
+                        to="/price/software">
 
                         <span>Работа с программным обеспечением</span>
 
-                    </a>
+                    </Link>
                 </section>
-
-                <ModalBlock data={this.state} action={this.handleCloseModal}/>
 
             </div>
         )

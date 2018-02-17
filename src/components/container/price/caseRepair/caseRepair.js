@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-export default class CaseRapair extends Component{
+export default class CaseRepair extends Component{
     render(){
         return(
             <div className="price_item grid">
