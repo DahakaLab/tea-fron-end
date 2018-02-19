@@ -185,7 +185,7 @@
   grid-gap: 10px;
 }
 .portfolio_item {
-  min-height: 20vh;
+  min-height: 18vh;
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -197,6 +197,7 @@
   position: relative;
   transition: color .5s ease;
   cursor: pointer;
+  text-decoration: none;
 }
 .portfolio_item::before {
   content: "";
@@ -206,7 +207,7 @@
   left: 0;
   bottom: 0;
   background-color: $dark;
-  opacity: .45;
+  opacity: .85;
   text-align: center;
   transition: opacity .5s ease;
 }
@@ -215,10 +216,11 @@
 }
 .portfolio_item:hover {
   text-decoration: none;
-  color: $accent;
+  color: $white;
+  text-shadow: $dark 0 0 10px;
 }
 .portfolio_item:hover::before {
-  opacity: .85;
+  opacity: .45;
 }
 
 .portfolio_item:nth-child(1) {

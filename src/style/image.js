@@ -17,7 +17,12 @@ export const IMAGE_ABOUT_RIGHT_3 = `url(https://pp.userapi.com/c830709/v83070999
 export const IMAGE_ABOUT_RIGHT_4 = `url(https://pp.userapi.com/c830709/v830709990/697ab/YSjRUlUUPco.jpg)`;
 export const IMAGE_ABOUT_RIGHT_5 = `url(https://pp.userapi.com/c830709/v830709990/697eb/Ssf2kgxcr7Y.jpg)`;
 
-export const IMAGE_MAIN_DELIVERY = `url(https://pp.userapi.com/c830709/v830709311/6c66f/DWy9HT7CYgo.jpg)`;
-export const IMAGE_MAIN_DIAGNOSTIC = `url(https://pp.userapi.com/c830709/v830709311/6c679/KYd3D7a-SHg.jpg)`;
-export const IMAGE_MAIN_REPAIR = `url(https://pp.userapi.com/c830709/v830709311/6c683/u3XSWMS6zTI.jpg)`;
-export const IMAGE_MAIN_5REASON = `url(https://pp.userapi.com/c830709/v830709311/6c68d/6A1Hku7PojI.jpg)`;
+export const IMAGE_MAIN_DELIVERY = `url(https://pp.userapi.com/c841431/v841431709/69d27/mFDDxycuHWs.jpg)`;
+export const IMAGE_MAIN_DIAGNOSTIC = `url(https://pp.userapi.com/c841431/v841431709/69d31/9kwdpmOBaxY.jpg)`;
+export const IMAGE_MAIN_REPAIR = `url(https://pp.userapi.com/c841431/v841431709/69d3b/PxQOlzP8XyU.jpg)`;
+export const IMAGE_MAIN_5REASON = `url(https://pp.userapi.com/c841431/v841431709/69d0a/uTeci8fV0-8.jpg)`;
+
+export const IMAGE_MAIN_DELIVERY_MODAL = `url(https://pp.userapi.com/c841431/v841431711/6c847/2eHMJgGt964.jpg)`;
+export const IMAGE_MAIN_DIAGNOSTIC_MODAL = `url(https://pp.userapi.com/c841431/v841431711/6c81f/LTHrWRVR39o.jpg)`;
+export const IMAGE_MAIN_REPAIR_MODAL = `url(https://pp.userapi.com/c841431/v841431711/6c83d/OzGw0x_sLTg.jpg)`;
+export const IMAGE_MAIN_5REASON_MODAL = `url(https://pp.userapi.com/c841431/v841431711/6c833/we8b1skG8R4.jpg)`;

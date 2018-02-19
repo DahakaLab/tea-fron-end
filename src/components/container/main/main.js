@@ -41,7 +41,7 @@ export default class MainRoute extends Component{
 
                 <section className="section_blog">
                     <div className="container">
-                        <h1>Ремонт ноутбука напрямую от практикующего сервисного инженера</h1>
+                        <h1>Ремонт ноутбуков напрямую от практикующих сервисных инженеров</h1>
 
                         <div className="blog_main grid">
 
@@ -52,7 +52,7 @@ export default class MainRoute extends Component{
                                 <span className="blog_item_img" style={{backgroundImage: IMAGE_MAIN_DELIVERY}}/>
                                 <span className="blog_item_content grid">
                                     <h4>Бесплатная доставка</h4>
-                                    <p>Мы бесплатно доставим</p>
+                                    <p>Бесплатный доставка техники на диагностику и обратно</p>
                                 </span>
                             </a>
                             <a
@@ -62,7 +62,7 @@ export default class MainRoute extends Component{
                                 <span className="blog_item_img" style={{backgroundImage: IMAGE_MAIN_DIAGNOSTIC}}/>
                                 <span className="blog_item_content grid">
                                     <h4>Бесплатная диагностика</h4>
-                                    <p>Мы бесплатно отдиагностируем</p>
+                                    <p>Даже в случае отказа от ремонта платить не придется</p>
                                 </span>
                             </a>
                             <a
@@ -72,7 +72,9 @@ export default class MainRoute extends Component{
                                 <span className="blog_item_img" style={{backgroundImage: IMAGE_MAIN_REPAIR}}/>
                                 <span className="blog_item_content grid">
                                     <h4>Качественный ремонт ноутбука любой сложности</h4>
-                                    <p>Мы клево починим</p>
+                                    <p>
+                                        Лучшие специалисты используя качественные расходные материалы и первоклассное
+                                        оборудование вернут ваш ноутбук к жизни лучшим образом</p>
                                 </span>
                             </a>
                             <a
@@ -81,8 +83,8 @@ export default class MainRoute extends Component{
                             >
                                 <span className="blog_item_img" style={{backgroundImage: IMAGE_MAIN_5REASON}}/>
                                 <span className="blog_item_content grid">
-                                    <h4>5 причин почему стоит обращаться напрямую к опытным инженерам</h4>
-                                    <p>Мы все четко объясним</p>
+                                    <h4>Наши приемущества</h4>
+                                    <p>Чайный сервис - это лучшее предложение по ремонту ноутбуков в Санкт-Петербурге</p>
                                 </span>
                             </a>
 
