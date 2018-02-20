@@ -10,7 +10,7 @@ export default class Diagnostic extends Component {
 
                 <div className="about_content grid">
                     <div className="about_content_left grid">
-                        <div className="contacts ">
+                        <div className="modal">
                             <h2>Оплата только за результат!</h2>
 
                             <article>

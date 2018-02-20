@@ -10,7 +10,7 @@ export default class FiveReasons extends Component {
 
                 <div className="about_content grid">
                     <div className="about_content_left grid">
-                        <div className="contacts ">
+                        <div className="modal">
                             <h2>Простая арифметика делает нас лучшими!</h2>
                             <article>
                                 Ненадо выводить сложные формулы чтобы понять что

@@ -70,7 +70,7 @@
   text-decoration: none;
   background-color: $dark;
   padding: 15px 45px;
-  font-size: 13px;
+  font-size: 18px;
   border-radius: 2px;
   text-align: center;
   position: relative;
@@ -345,3 +345,64 @@
   outline: none;
   padding: 20px;
 }
+
+.price_item {
+  position: relative;
+  padding: 15px;
+}
+
+table#price {
+  margin: 0 auto;
+  border-collapse: collapse;
+  background: $gray;
+  color: $white;
+  text-rendering: optimizeLegibility;
+  border-radius: 5px;
+  text-align: center;
+}
+table#price caption {
+  font-size: 2rem; color: $dark;
+  margin: 1rem;
+}
+table#price thead th {
+  font-weight: 600;
+  background: $dark;
+}
+table#price thead th,
+table#price tbody td {
+  padding: .8rem; font-size: 1.4rem;
+}
+table#price tbody td {
+  padding: .8rem; font-size: 1.4rem;
+  color: $dark;
+}
+table#price tbody td#subtitle {
+  line-height: 1.1;
+  background: $gray;
+  color: $white;
+  font-size: 16px;
+  font-weight: bold;
+}
+table#price tbody td#first_child {
+  border-top: 1px solid $gray;
+  line-height: 1.1;
+  background: $gray;
+  color: $white;
+  font-size: 16px;
+  font-weight: bold;
+
+}
+table#price tbody tr {
+  background: $white;
+}
+table#price tbody tr:nth-child(2n) {
+  background: $light;
+}
+table#price tbody tr:not(:last-child) {
+  border-top: 1px solid $border;
+  border-bottom: 1px solid $border;
+}
+
+
+
+@import "media.scss";

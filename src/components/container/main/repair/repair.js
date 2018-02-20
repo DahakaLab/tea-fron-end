@@ -10,7 +10,7 @@ export default class Repair extends Component {
 
                 <div className="about_content grid">
                     <div className="about_content_left grid">
-                        <div className="contacts ">
+                        <div className="modal">
                             <h2>Качество - залог успеха!</h2>
                             <article>
                                 Мы фанаты своего дела, поэтому бережно обращаемся с техникой и стараемся

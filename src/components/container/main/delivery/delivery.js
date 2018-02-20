@@ -10,7 +10,7 @@ export default class Delivery extends Component {
 
                 <div className="about_content grid">
                     <div className="about_content_left grid">
-                        <div className="contacts ">
+                        <div className="modal">
                             <h2>Время - деньги!</h2>
                             <article>
                                 Мы прексрано понимаем важность времени в современном мире, поэтому мы сами к вам приедем

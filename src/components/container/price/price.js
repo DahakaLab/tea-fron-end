@@ -72,7 +72,7 @@ export default class Price extends Component{
                         style={{backgroundImage: IMAGE_GRID_6}}
                         to="/price/power_supply_repair">
 
-                        <span>Ремонт по цепям питания</span>
+                        <span>Ремонт цепей питания</span>
 
                     </Link>
                     <Link
