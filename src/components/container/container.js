@@ -29,7 +29,7 @@ export default class Container extends Component {
                     <Route path="/price/component_replacement" component={ComponentReplacement}/>
                     <Route path="/price/smd_replacement" component={SMDReplacement}/>
                     <Route path="/price/bga_replacement" component={BGAReplacement}/>
-                    <Route path="/price/PowerSupplyRepair" component={PowerSupplyRepair}/>
+                    <Route path="/price/power_supply_repair" component={PowerSupplyRepair}/>
                     <Route path="/price/case_repair" component={CaseRepair}/>
                     <Route path="/price/firmware" component={Firmware}/>
                     <Route path="/price/software" component={Software}/>

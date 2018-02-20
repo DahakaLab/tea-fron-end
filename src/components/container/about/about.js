@@ -13,16 +13,16 @@ export default class About extends Component{
 
                 <section className="about_section grid">
                     <Link className="button" to="/about">
-                        <span>Мой опыт работы</span>
+                        <span>О нас</span>
                     </Link>
                     <Link className="button" to="/about/politics">
-                        <span>Моя политика работы</span>
+                        <span>Как мы работаем</span>
                     </Link>
                     <Link className="button" to="/about/principle">
-                        <span>Мой принцип работы</span>
+                        <span>Наши принципы работы</span>
                     </Link>
                     <Link className="button" to="/about/equipment">
-                        <span>Мое оборудование</span>
+                        <span>Наше оборудование</span>
                     </Link>
                     <Link className="button" to="/about/contacts">
                         <span>Контакты</span>

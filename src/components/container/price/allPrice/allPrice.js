@@ -1,10 +1,30 @@
 import React, { Component } from 'react';
-/*import {
-    IMAGE_ABOUT_RIGHT_3
-} from "./../../../../style/image.js";*/
+import {
+    Events,
+    animateScroll as scroll,
+    scrollSpy
+} from 'react-scroll';
 
 export default class AllPrice extends Component{
+    componentDidMount() {
+
+        scrollSpy.update();
+
+    }
+
+    componentWillUnmount() {
+        Events.scrollEvent.remove('begin');
+        Events.scrollEvent.remove('end');
+    }
+
+    scrollToTop() {
+        scroll.scrollToTop();
+    }
+
     render(){
+
+
+
         return(
             <section className="price_item">
 
@@ -81,13 +101,15 @@ export default class AllPrice extends Component{
                             <tr><td/><td>Установка ОС</td><td>От 1000 руб.</td></tr>
                             <tr><td/><td>Установка антивируса</td><td>От 300 руб.</td></tr>
                             <tr><td/><td>Установка оффисных программ</td><td>От 500 руб.</td></tr>
-                            <tr><td/><td>Восстановление работоспособности ОС<br/>с сохранением данных</td><td>От 1500 руб.</td></tr>
+                            <tr><td/><td>Восстановление работоспособности ОС с сохранением данных</td><td>От 1500 руб.</td></tr>
                             <tr><td/><td>Установка драйверов</td><td>От 300 руб.</td></tr>
                         </tbody>
 
                     </table>
 
                 </div>
+
+                <a className="button up_button" onClick={this.scrollToTop}>Наверх</a>
 
             </section>
         )

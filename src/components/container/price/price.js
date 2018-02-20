@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import {
-    IMAGE_GRID_1,
-    IMAGE_GRID_2,
-    IMAGE_GRID_3,
-    IMAGE_GRID_4,
-    IMAGE_GRID_5,
-    IMAGE_GRID_6,
-    IMAGE_GRID_7,
-    IMAGE_GRID_8,
-    IMAGE_GRID_9,
-    IMAGE_GRID_10
+    IMAGE_GRID_DELIVARY_AND_DIAG,
+    IMAGE_GRID_NODAL_REPLACE,
+    IMAGE_GRID_COMPONENT_REPLACE,
+    IMAGE_GRID_SMD_REPLACE,
+    IMAGE_GRID_BGA_REPLACE,
+    IMAGE_GRID_POWER_SUPPLY_REPAIR,
+    IMAGE_GRID_CASE_REPAIR,
+    IMAGE_GRID_FIRMWARE,
+    IMAGE_GRID_SOFTWARE,
+    IMAGE_GRID_ALL_PRICE
 } from "./../../../style/image.js";
 
 export default class Price extends Component{
@@ -21,7 +21,7 @@ export default class Price extends Component{
                 <section className="portfolio_section grid">
                     <Link
                         className="portfolio_item grid"
-                        style={{backgroundImage: IMAGE_GRID_10}}
+                        style={{backgroundImage: IMAGE_GRID_ALL_PRICE}}
                         to="/price/all_price">
 
                         <span>Весь прейскурант цен</span>
@@ -29,7 +29,7 @@ export default class Price extends Component{
                     </Link>
                     <Link
                         className="portfolio_item grid"
-                        style={{backgroundImage: IMAGE_GRID_5}}
+                        style={{backgroundImage: IMAGE_GRID_DELIVARY_AND_DIAG}}
                         to="/price/delivery_and_diagnostic">
 
                         <span>Доставка и диагностика</span>
@@ -37,7 +37,7 @@ export default class Price extends Component{
                     </Link>
                     <Link
                         className="portfolio_item  close_btn grid"
-                        style={{backgroundImage: IMAGE_GRID_1}}
+                        style={{backgroundImage: IMAGE_GRID_NODAL_REPLACE}}
                         to="/price/nodal_replacement">
 
                         <span>Узловая замена</span>
@@ -45,7 +45,7 @@ export default class Price extends Component{
                     </Link>
                     <Link
                         className="portfolio_item grid"
-                        style={{backgroundImage: IMAGE_GRID_2}}
+                        style={{backgroundImage: IMAGE_GRID_COMPONENT_REPLACE}}
                         to="/price/component_replacement">
 
                         <span>Компонентная замена</span>
@@ -53,7 +53,7 @@ export default class Price extends Component{
                     </Link>
                     <Link
                         className="portfolio_item grid"
-                        style={{backgroundImage: IMAGE_GRID_3}}
+                        style={{backgroundImage: IMAGE_GRID_SMD_REPLACE}}
                         to="/price/smd_replacement">
 
                         <span>Замена компонентов поверхностного монтажа (SMD)</span>
@@ -61,7 +61,7 @@ export default class Price extends Component{
                     </Link>
                     <Link
                         className="portfolio_item grid"
-                        style={{backgroundImage: IMAGE_GRID_4}}
+                        style={{backgroundImage: IMAGE_GRID_BGA_REPLACE}}
                         to="/price/bga_replacement">
 
                         <span>Замена компонентов на массиве шариков (BGA)</span>
@@ -69,7 +69,7 @@ export default class Price extends Component{
                     </Link>
                     <Link
                         className="portfolio_item grid"
-                        style={{backgroundImage: IMAGE_GRID_6}}
+                        style={{backgroundImage: IMAGE_GRID_POWER_SUPPLY_REPAIR}}
                         to="/price/power_supply_repair">
 
                         <span>Ремонт цепей питания</span>
@@ -77,7 +77,7 @@ export default class Price extends Component{
                     </Link>
                     <Link
                         className="portfolio_item grid"
-                        style={{backgroundImage: IMAGE_GRID_7}}
+                        style={{backgroundImage: IMAGE_GRID_CASE_REPAIR}}
                         to="/price/case_repair">
 
                         <span>Корпусной ремонт</span>
@@ -85,7 +85,7 @@ export default class Price extends Component{
                     </Link>
                     <Link
                         className="portfolio_item grid"
-                        style={{backgroundImage: IMAGE_GRID_8}}
+                        style={{backgroundImage: IMAGE_GRID_FIRMWARE}}
                         to="/price/firmware">
 
                         <span>Прошивка</span>
@@ -93,7 +93,7 @@ export default class Price extends Component{
                     </Link>
                     <Link
                         className="portfolio_item grid"
-                        style={{backgroundImage: IMAGE_GRID_9}}
+                        style={{backgroundImage: IMAGE_GRID_SOFTWARE}}
                         to="/price/software">
 
                         <span>Работа с программным обеспечением</span>

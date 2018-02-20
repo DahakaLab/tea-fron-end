@@ -217,10 +217,11 @@
 .portfolio_item:hover {
   text-decoration: none;
   color: $white;
-  text-shadow: $dark 0 0 10px;
+  text-shadow: 1px 1px 2px $black, 0 0 1em $dark;
+
 }
 .portfolio_item:hover::before {
-  opacity: .45;
+  opacity: .10;
 }
 
 .portfolio_item:nth-child(1) {
@@ -260,6 +261,16 @@
     font-weight: bold;
     color: $dark;
     line-height: 1.2;
+  }
+  a:link,
+  a:visited,
+  a:active {
+    color: $dark;
+    text-decoration: none;
+  }
+  a:hover {
+    color: $accent;
+    text-decoration: none;
   }
 }
 .landing_section {
@@ -346,13 +357,19 @@
   padding: 20px;
 }
 
+
+
 .price_item {
   position: relative;
-  padding: 15px;
 }
 
 table#price {
-  margin: 0 auto;
+  margin: {
+    top: 0;
+    left: 20%;
+    right: 20%;
+    bottom: 40px;
+  }
   border-collapse: collapse;
   background: $gray;
   color: $white;
@@ -401,6 +418,21 @@ table#price tbody tr:nth-child(2n) {
 table#price tbody tr:not(:last-child) {
   border-top: 1px solid $border;
   border-bottom: 1px solid $border;
+}
+
+
+
+.up_button {
+  z-index: 3;
+  position: fixed;
+  bottom: 180px;
+  left: 83%;
+  right: 2%;
+  opacity: .10;
+  transition: opacity .5s ease;
+}
+.up_button:hover {
+  opacity: 100;
 }
 
 
