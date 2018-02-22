@@ -316,9 +316,12 @@
     font-size: 27px;
     a:link,
     a:visited,
-    a:active,
-    a:hover {
+    a:active{
       color: $footer2;
+      text-decoration: none;
+    }
+    a:hover {
+      color: $accent;
       text-decoration: none;
     }
   }

@@ -6,7 +6,7 @@ import {
 export default class Diagnostic extends Component {
     render(){
         return(
-            <section className="landing_section">
+            <section className="landing_section modal_window">
 
                 <div className="about_content grid">
                     <div className="about_content_left grid">
