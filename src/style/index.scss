@@ -78,19 +78,6 @@
   transition: background-color .1s ease;
   cursor: pointer;
 }
-.button::after {
-  transition: background-color .2s ease;
-  position: absolute;
-  content: '';
-  height: 4px;
-  bottom: 0;
-  width: 100%;
-  background-color: $black;
-  opacity: .18;
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px;
-  left: 0;
-}
 .button:focus{
   background-color: $grayer;
 }
@@ -428,6 +415,7 @@ table#price tbody tr:not(:last-child) {
 
 
 .up_button {
+  border: none;
   z-index: 3;
   position: fixed;
   bottom: 180px;

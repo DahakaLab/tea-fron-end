@@ -22,7 +22,7 @@ export default class DeliveryAndDiagnostic extends Component{
     }
     render(){
         return(
-            <div className="landing_section price_item grid">
+            <div className="price_item grid">
 
                 <div className="price_table">
 
