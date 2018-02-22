@@ -36,6 +36,7 @@
       right: auto;
       bottom: 40px;
     }
+    padding: 0 40px;
   }
   table#price thead th,
   table#price tbody td {
@@ -59,15 +60,13 @@
 
   .landing_section {
     padding: 80px 0;
-    h2 {
-      font-size: 25px;
-      line-height: 1.2;
-    }
   }
   .landing_section {
     .about_content {
       .about_content_left {
         h2 {
+          font-size: 25px;
+          line-height: 1.2;
           margin-bottom: 20px;
         }
         article {
@@ -75,6 +74,62 @@
         }
       }
     }
+  }
+
+}
+
+@media only screen and (max-width: 992px) {
+
+  .about_section {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .button_about:nth-child(5) {
+    grid-column: 3;
+  }
+  .button_about:nth-child(2) {
+    display: grid;
+    align-content: center;
+    grid-column: 2;
+    grid-row: 1 / 3;
+  }
+
+  .landing_section {
+    padding: 40px 0;
+  }
+  .landing_section {
+    .about_content {
+      .about_content_left {
+        h2 {
+          font-size: 20px;
+          line-height: 1;
+          margin-bottom: 10px;
+        }
+        article {
+          font-size: 9px;
+        }
+      }
+    }
+  }
+
+  .landing_section {
+    .about_content {
+      .about_content_left {
+        .modal {
+          h2 {
+            font-size: 25px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+          }
+          article {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  .react_modal {
+    top: 5%;
   }
 
 }

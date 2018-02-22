@@ -12,19 +12,19 @@ export default class About extends Component{
             <div className="about">
 
                 <section className="about_section grid">
-                    <Link className="button" to="/about">
+                    <Link className="button button_about" to="/about">
                         <span>О нас</span>
                     </Link>
-                    <Link className="button" to="/about/politics">
+                    <Link className="button button_about" to="/about/politics">
                         <span>Как мы работаем</span>
                     </Link>
-                    <Link className="button" to="/about/principle">
+                    <Link className="button button_about" to="/about/principle">
                         <span>Наши принципы работы</span>
                     </Link>
-                    <Link className="button" to="/about/equipment">
+                    <Link className="button button_about" to="/about/equipment">
                         <span>Наше оборудование</span>
                     </Link>
-                    <Link className="button" to="/about/contacts">
+                    <Link className="button button_about" to="/about/contacts">
                         <span>Контакты</span>
                     </Link>
                 </section>
