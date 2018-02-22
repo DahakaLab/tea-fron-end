@@ -83,7 +83,7 @@ export default class MainRoute extends Component{
                             >
                                 <span className="blog_item_img" style={{backgroundImage: IMAGE_MAIN_5REASON}}/>
                                 <span className="blog_item_content grid">
-                                    <h4>Наши приемущества</h4>
+                                    <h4>Наши преимущества</h4>
                                     <p>Чайный сервис - это лучшее предложение по ремонту ноутбуков в Санкт-Петербурге</p>
                                 </span>
                             </a>

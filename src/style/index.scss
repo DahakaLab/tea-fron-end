@@ -366,8 +366,8 @@
 table#price {
   margin: {
     top: 0;
-    left: 20%;
-    right: 20%;
+    left: auto;
+    right: auto;
     bottom: 40px;
   }
   border-collapse: collapse;
@@ -387,10 +387,12 @@ table#price thead th {
 }
 table#price thead th,
 table#price tbody td {
-  padding: .8rem; font-size: 1.4rem;
+  padding: .8rem;
+  font-size: 1.4rem;
 }
 table#price tbody td {
-  padding: .8rem; font-size: 1.4rem;
+  padding: .8rem;
+  font-size: 1.4rem;
   color: $dark;
 }
 table#price tbody td#subtitle {
@@ -407,7 +409,6 @@ table#price tbody td#first_child {
   color: $white;
   font-size: 16px;
   font-weight: bold;
-
 }
 table#price tbody tr {
   background: $white;
