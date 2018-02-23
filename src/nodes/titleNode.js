@@ -1,5 +1,5 @@
 export function titleNode() {
-    let titleText, logoTitle;
+    let titleText, logoTitle, viewPort;
 
     logoTitle = document.createElement('link');
     logoTitle.rel = 'shortcut icon';
@@ -9,6 +9,11 @@ export function titleNode() {
     titleText = document.createElement('title');
     titleText.innerHTML = 'Чайный сервис';
 
+    viewPort = document.createElement('meta');
+    viewPort.name = 'viewport';
+    viewPort.content = 'width=device-width, initial-scale=1.0';
+
+    document.head.appendChild(viewPort);
     document.head.appendChild(logoTitle);
     document.head.appendChild(titleText);
 }
