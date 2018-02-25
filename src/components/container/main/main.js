@@ -23,12 +23,12 @@ export default class MainRoute extends Component{
         this.handleCloseModal = this.handleCloseModal.bind(this);
     }
 
-    handleOpenModal (x) {
+    handleOpenModal(x){
         this.setState({ modalIsOpen: true });
         this.setState({ modalItem: x });
     }
 
-    handleCloseModal () {
+    handleCloseModal(){
         this.setState({
             modalIsOpen: false,
             modalItem: null
