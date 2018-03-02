@@ -1,6 +1,6 @@
 @import "vars.scss";
 
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 1555px) {
 
   .header_content {
     h1 {
@@ -492,6 +492,26 @@
         visibility: hidden;
         padding: 0;
       }
+    }
+  }
+
+}
+
+//---------------------------min-height----------------------------
+
+@media only screen and (max-height: 780px) {
+
+  .react_modal {
+    top: 5%;
+  }
+
+  .modal_window {
+    padding-top: 20px;
+    padding-bottom: 0;
+    border: none;
+    .about_content {
+      min-height: 40vh;
+      
     }
   }
 
