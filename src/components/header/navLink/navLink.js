@@ -8,6 +8,7 @@ export default class NavLink extends Component{
                     <Link className="button" to="/">Главная</Link>
                     <Link className="button" to="/price">Стоимость</Link>
                     <Link className="button" to="/about">О нас</Link>
+                    <Link className="button" to="/service">Сервис</Link>
                 </nav>
         )
     }

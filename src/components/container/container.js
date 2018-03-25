@@ -14,6 +14,7 @@ import PowerSupplyRepair from "./price/powerSupplyRepair/powerSypplyRepair";
 import SMDReplacement from "./price/smdReplacement/smdReplacement";
 import Software from "./price/software/software";
 import AllPrice from "./price/allPrice/allPrice";
+import Service from "./service/service";
 
 export default class Container extends Component {
     render() {
@@ -34,6 +35,7 @@ export default class Container extends Component {
                     <Route path="/price/firmware" component={Firmware}/>
                     <Route path="/price/software" component={Software}/>
                     <Route path="/about" component={About}/>
+                    <Route path="/service" component={Service}/>
                     <Route path="*" component={NotFound}/>
                 </Switch>
 
